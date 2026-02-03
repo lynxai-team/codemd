@@ -1,0 +1,32 @@
+version: "2"
+
+linters:
+  enable:
+    - bodyclose
+    - errcheck
+    - goconst
+    - gocritic
+    - govet
+    - ineffassign
+    - mirror
+    - misspell
+    - nolintlint
+    - paralleltest
+    - revive
+    - staticcheck
+    - unconvert
+    - unparam
+    - unused
+    - whitespace
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - goimports
+  settings:
+    gci:
+      sections:
+        - standard
+        - default
+        - localmodule
